@@ -57,7 +57,7 @@ export const Footer = styled.div`
 
   position: fixed; 
   bottom: ${SPACER.large};
-  left 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   
   text-align: center;

@@ -2,7 +2,7 @@
   "name": "datetime-optimized",
   "private": true,
   "description": "A site that tells you what time it is right now.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "Yihwan Kim <hi@yihwan.kim>",
   "dependencies": {
     "@emotion/babel-preset-css-prop": "^11.12.0",
