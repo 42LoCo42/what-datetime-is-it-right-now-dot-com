@@ -27,7 +27,7 @@ class RadarClock extends React.Component {
     const currentMinutes = date.getMinutes();
     const currentHours = date.getHours();
 
-    let newData = [...this.state.data];
+    let newData = this.state.data.map(item => ({ ...item }));
 
     if (currentSeconds === 0) {
       newData = newData.map(data => {
