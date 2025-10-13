@@ -36,7 +36,7 @@ class TimezoneGrid extends React.Component {
       'Pacific/Palau',
       'Australia/Melbourne',
     ],
-    isAnimationActive: false, 
+    isAnimationActive: true,
   }
 
   shouldComponentUpdate(prevProps, prevState) {
