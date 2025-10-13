@@ -56,4 +56,10 @@ pkgs.stdenv.mkDerivation rec {
       ${getExe pkgs.python3} $out/bin/datetime \
       --add-flags "-m http.server -d $out/app"
   '';
+
+  meta = {
+    description = "A site that tells you what date and time it is right now";
+    homepage = "https://github.com/42LoCo42/what-datetime-is-it-right-now-dot-com";
+    mainProgram = pname;
+  };
 }
