@@ -23,7 +23,8 @@ pkgs.stdenv.mkDerivation rec {
     makeBinaryWrapper
 
     nodejs
-    pnpm.configHook
+    pnpm
+    pnpmConfigHook
 
     # for sharp build:
     node-gyp
@@ -35,7 +36,7 @@ pkgs.stdenv.mkDerivation rec {
     vips
   ];
 
-  pnpmDeps = pkgs.pnpm.fetchDeps {
+  pnpmDeps = pkgs.fetchPnpmDeps {
     inherit pname version src;
     fetcherVersion = 2;
     hash = "sha256-R7E55MuvIjHaX+6dSH3HLQMV5lWeCpPC+QI3nT6XCzc=";
