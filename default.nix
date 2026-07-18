@@ -5,7 +5,7 @@ let
 in
 pkgs.stdenv.mkDerivation rec {
   pname = "datetime";
-  version = "0.2.1";
+  version = "0.2.3";
 
   src = toSource {
     root = ./.;
